@@ -1,80 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>About</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
     <style>
-        /* Add styles for the sticky footer */
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-        }
+      /* Add styles for the sticky footer */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+        min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+        background-image: linear-gradient(
+          rgb(158, 149, 149),
+          rgb(165, 138, 211)
+        ); /* Change background color with rgba */
+      }
 
-        .container {
-            flex-grow: 1; /* Allow the container to grow and push the footer to the bottom */
-            padding: 20px;
-        }
+      h1,
+      h2,
+      p {
+        font-family: "Your Desired Font", "Times New Roman", Times, serif;
+      }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+      .container {
+        flex-grow: 1; /* Allow the container to grow and push the footer to the bottom */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* Remove text-align center to align content to the left */
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Add animation for header */
+      header h1 {
+        font-size: 2.5em;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
         }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      section {
+        margin-bottom: 40px;
+        /* Remove text-align center to align content to the left */
+      }
+
+      /* Add animation for sections */
+      section h2,
+      section p {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      /* Style the button */
+      .button-71 {
+        background-color: #0078d0;
+        border: 0;
+        margin: 8px 0px;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        outline: 0;
+        padding: 16px 21px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-71:before {
+        background-color: initial;
+        background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+        border-radius: 125px;
+        content: "";
+        height: 50%;
+        left: 4%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        transition: all 0.3s;
+        width: 92%;
+      }
+      .no-underline {
+        text-decoration: none;
+      }
+
+      .button-71:hover {
+        box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+        transform: scale(1.05);
+      }
+
+      @media (min-width: 768px) {
+        .button-71 {
+          padding: 16px 48px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.svg" alt="email svg" />
-                <span>Emailvalidator</span>
-            </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="/">Contact Us</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img src="logo.jpeg" alt="email svg" />
+          <span>Emailvalidator</span>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="container">
-        <header>
-            <h1>About Us</h1>
-        </header>
+      <header>
+        <h1>About Us</h1>
+      </header>
+      <section>
+        <h2>Our Website Benefits</h2>
+        <p>
+          Emailvalidator.com offers a wide range of benefits to its users. With
+          our advanced email validation tools, you can ensure the quality and
+          accuracy of your email lists, leading to improved email marketing
+          campaign performance. Our services help you eliminate invalid and
+          potentially harmful email addresses, reduce bounce rates, and enhance
+          your sender reputation. Additionally, we provide real-time
+          verification, bulk validation, and integration options for seamless
+          email list management. Join us today and experience the advantages of
+          a clean and efficient email list management solution.
+        </p>
+      </section>
 
-        <section>
-            <h2>Our Story</h2>
-            <p>Welcome to our website! We are a passionate team dedicated to...</p>
-        </section>
-
-        <section>
-            <h2>Our Mission</h2>
-            <p>At our organization, we strive to...</p>
-        </section>
-
-        <section>
-            <h2>Meet the Team</h2>
-            <ul>
-                <li>John Doe - CEO</li>
-                <li>Jane Smith - CTO</li>
-                <li>Alice Johnson - CFO</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to get in touch with us, please...</p>
-        </section>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or would like to get in touch with us,
+          please...
+        </p>
+        <button class="button-71" role="button">
+          <a href="contact.html" class="no-underline">Contact Us</a>
+        </button>
+      </section>
     </div>
     <footer>
-        <p>&copy; 2023 Copyright | Emailvalidater.com | All Rights reserved</p>
+      <p>&copy; 2023 Copyright | Emailvalidater.com | All Rights reserved</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
